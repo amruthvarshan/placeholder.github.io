@@ -350,6 +350,7 @@ input, select, textarea {
 		border: 0;
 		border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 		margin: 1em 0;
+		width: 15%;
 	}
 
 		hr.major {
