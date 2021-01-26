@@ -4147,17 +4147,122 @@ input, select, textarea {
 
 /* Name and picture */
 
-.namepicbox{
-    display: flex;
-}
+.namebox {
+		background-color: #212121;
+		margin: auto;
+		margin-top: -4.75em;
+		position: relative;
+	}
 
-.dpfixed{
-	width: 300px;
-	margin-left: 5em;
-	border-radius: 45px;
-}
+		.namebox.spotlight {
+			background-color: #212121;
+		}
 
-.nameflex{
-    margin-left: 2em;
-	flex-grow: 1;
-}
+			.namebox.spotlight .inner {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				-moz-flex-direction: row;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+			}
+
+			.namebox.spotlight .image {
+				border-radius: 50%;
+				margin: 0 3em 2em 0;
+				width: 22em;
+				overflow: hidden;
+				-ms-flex: 1;
+			}
+
+				.namebox.spotlight .image img {
+					border-radius: 50%;
+					width: 100%;
+				}
+
+			.namebox.spotlight .content {
+				width: 100%;
+				-ms-flex: 2;
+			}
+
+			.namebox.spotlight:nth-child(2n - 1) .inner {
+				-moz-flex-direction: row-reverse;
+				-webkit-flex-direction: row-reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+				text-align: right;
+			}
+
+			.namebox.spotlight:nth-child(2n - 1) .image {
+				margin: 0 0 2em 3em;
+			}
+
+
+		@media screen and (max-width: 736px) {
+
+			.namebox {
+				/*margin: 2.5em 0;*/
+			}
+
+				.namebox:before, .namebox:after {
+					height: 2.5em;
+				}
+
+				.namebox:before {
+					top: -2.5em;
+				}
+
+				.namebox:after {
+					bottom: -2.5em;
+					left: 0;
+				}
+
+				.namebox .inner {
+					padding: 2em 2em 0.1em 2em ;
+				}
+
+				.namebox.spotlight .inner {
+					-moz-align-items: -moz-flex-start;
+					-webkit-align-items: -webkit-flex-start;
+					-ms-align-items: -ms-flex-start;
+					align-items: flex-start;
+				}
+
+				.namebox.spotlight .image {
+					width: 19em;
+					margin: 0 1.75em 2em 0;
+				}
+
+				.namebox.spotlight:nth-child(2n - 1) .image {
+					margin: 0 0 2em 1.75em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.namebox.spotlight .inner {
+				display: block;
+			}
+
+			.namebox.spotlight .image {
+				margin: 0 0 1em 0 !important;
+				max-width: 85%;
+				width: 12em;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			.namebox .inner {
+				padding: 2em 1.5em 0.1em 1.5em ;
+			}
+
+		}
