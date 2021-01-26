@@ -252,7 +252,7 @@ input, select, textarea {
 		font-family: Raleway, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
-		margin: 0 0 -.35em 0;
+		margin: 0 0 1em 0;
 		text-transform: uppercase;
 	}
 
@@ -349,8 +349,7 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-bottom: solid 2px rgba(255, 255, 255, 0.125);
-		margin: 1em 0;
-		width: 15%;
+		margin: 2.5em 0;
 	}
 
 		hr.major {
@@ -3427,10 +3426,12 @@ input, select, textarea {
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			/*border-bottom: solid 2px rgba(255, 255, 255, 0.125);*/
+			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-image: linear-gradient(to right, rgba(255, 255, 255, 0.125) 32%, rgba(0,0,0,0) 32%); /* to top - at 50% transparent */
+			border-image-slice: 1;
 			font-size: 2em;
-			/*margin-bottom: 0.8em;
-			padding-bottom: 0.4em;*/
+			margin-bottom: 0.8em;
+			padding-bottom: 0.4em;
 		}
 
 		#banner p {
@@ -3455,7 +3456,7 @@ input, select, textarea {
 			font-size: 1em;
 			font-weight: 200;
 			letter-spacing: 0.1em;
-			line-height: 1;
+			line-height: 2;
 			text-transform: uppercase;
 		}
 
