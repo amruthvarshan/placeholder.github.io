@@ -4174,7 +4174,7 @@ input, select, textarea {
 			}
 
 			.namebox.spotlight .image {
-				border-radius: 50%;
+				border-radius: 15px;
 				margin: 0 3em 2em 0;
 				width: 22em;
 				overflow: hidden;
@@ -4182,7 +4182,7 @@ input, select, textarea {
 			}
 
 				.namebox.spotlight .image img {
-					border-radius: 50%;
+					border-radius: 15px;
 					width: 100%;
 				}
 
