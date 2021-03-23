@@ -976,8 +976,8 @@ input, select, textarea {
 
 		#thumbnails article {
 			position: relative;
-			width: 50%;
-			background: #101010;
+			width: 100%;
+			background: #000;
 			outline: 0;
 		}
 
@@ -992,6 +992,7 @@ input, select, textarea {
 				#thumbnails article .thumbnail img {
 					display: block;
 					width: 100%;
+					padding: 0.3em;
 				}
 
 				#thumbnails article .thumbnail:before {
