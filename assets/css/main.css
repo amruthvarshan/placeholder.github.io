@@ -3629,7 +3629,7 @@ input, select, textarea {
 
 	.wrapper {
 		background-color: #212121;
-		margin: 6.5em 0 0 0;
+		margin: 0;
 		position: relative;
 	}
 
@@ -3650,7 +3650,7 @@ input, select, textarea {
 			background-size: 100% 100%;
 			content: '';
 			display: block;
-			height: 6.5em;
+			/*height: 6.5em;*/
 			position: absolute;
 			width: 100%;
 		}
@@ -4010,8 +4010,12 @@ input, select, textarea {
 
 /* Footer */
 
+	.footer-padding {
+		padding-bottom: 1.5em;
+	}
+
 	#footer .inner {
-		padding: 5em 0 3em 0 ;
+		padding: 4.7em 0 3em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -4047,6 +4051,10 @@ input, select, textarea {
 			margin: 2em 0 0 0;
 			padding: 2em 0 0 0;
 			width: 100%;
+		}
+
+		#footer .about {
+			margin: -4em 0 0 0 !important;
 		}
 
 			#footer .inner .copyright li {
