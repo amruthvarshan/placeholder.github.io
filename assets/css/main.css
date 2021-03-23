@@ -2378,6 +2378,12 @@ input, select, textarea {
 		font-size: 1.5em;
 	}
 
+	@media screen and (max-width: 480px) {
+		.icon {
+			font-size: 2em;
+		}
+	}
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
