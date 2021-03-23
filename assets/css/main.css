@@ -4104,6 +4104,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			#footer .about {
+				margin: -4em 0 2em 0 !important;
+			}
+
 				#footer .inner form {
 					width: 100%;
 					margin: 0 0 4em 0;
@@ -4125,6 +4129,10 @@ input, select, textarea {
 		#footer {
 			margin-top: -2.5em;
 			padding-top: 2.5em;
+		}
+
+		#footer .about {
+			margin: -4em 0 2em 0 !important;
 		}
 
 			#footer .inner {
@@ -4150,6 +4158,10 @@ input, select, textarea {
 			padding-left: 0;
 		}
 
+		#footer .about {
+			margin: -4em 0 2em 0 !important;
+		}
+
 			#footer .inner .copyright li:first-child {
 				margin-top: 0;
 			}
@@ -4160,6 +4172,10 @@ input, select, textarea {
 
 		#footer .inner {
 			padding: 2em 1.5em 0.1em 1.5em ;
+		}
+
+		#footer .about {
+			margin: -4em 0 2em 0 !important;
 		}
 
 	}
