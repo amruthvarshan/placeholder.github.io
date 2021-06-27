@@ -3650,14 +3650,14 @@ input, select, textarea {
 			background-size: 100% 100%;
 			content: '';
 			display: block;
-			/*height: 6.5em;*/
+			height: 1.75em;
 			position: absolute;
 			width: 100%;
 		}
 
 		.wrapper:before {
 			left: 0;
-			top: -6.5em;
+			top: -1.75em;
 		}
 
 		.wrapper:after {
@@ -3665,7 +3665,7 @@ input, select, textarea {
 			-webkit-transform: scaleY(-1);
 			-ms-transform: scaleY(-1);
 			transform: scaleY(-1);
-			bottom: -6.5em;
+			bottom: -1.75em;
 			left: 0;
 		}
 
@@ -4015,7 +4015,7 @@ input, select, textarea {
 	}
 
 	#footer .inner {
-		padding: 2em 0 3em 0 ;
+		padding: 5em 0 3em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
